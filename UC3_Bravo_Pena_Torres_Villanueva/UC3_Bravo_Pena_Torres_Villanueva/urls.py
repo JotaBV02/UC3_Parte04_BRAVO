@@ -22,4 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name = "index"),
     path('inicio/', views.inicio, name = "inicio"),
+    path('primos/',views.primos,name="primos"),
+    path('primos/<int:a>',views.primos,name="primos"),
+    path('primos/<int:a>/<int:b>',views.primos,name="primos")
 ]
