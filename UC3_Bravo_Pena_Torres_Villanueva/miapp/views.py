@@ -8,7 +8,12 @@ layout ="""
     <li>
         <a href="/inicio"> Inicio</a>
         </li>
-        <li><a href="/primos">Numeros primos</a></li>
+        <li>
+        <a href="/primos">Numeros primos</a>
+        </li>
+        <li>
+        <a href="/examen">Examen</a>
+        </li>
     </ul>
 <hr/>
 """
@@ -44,3 +49,6 @@ def primos(request, a=0, b=100):
     
     resultado += "</ul>"
     return HttpResponse(layout + resultado)
+
+def examen(request):
+    return render(request, 'examen.html')

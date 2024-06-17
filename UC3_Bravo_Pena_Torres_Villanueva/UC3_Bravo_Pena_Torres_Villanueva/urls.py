@@ -24,5 +24,6 @@ urlpatterns = [
     path('inicio/', views.inicio, name = "inicio"),
     path('primos/',views.primos,name="primos"),
     path('primos/<int:a>',views.primos,name="primos"),
-    path('primos/<int:a>/<int:b>',views.primos,name="primos")
+    path('primos/<int:a>/<int:b>',views.primos,name="primos"),
+    path('examen/', views.examen, name = "examen"),
 ]
